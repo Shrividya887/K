@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANIME </title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('C:\\Users\\Student\\Downloads\\naruto.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2em;
-        }
-    </style>
+    <title>Basic Static Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="content">
-        <h1>Welcome to My ANIME Website</h1>
-        <p>This is a simplle static website with a background image.</p>
-    </div>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section of the website.</p>
+            <button onclick="showAlert()">Click Me</button>
+        </section>
+        
+        <section id="about">
+            <h2>About</h2>
+            <p>This is the about section of the website.</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>This is the contact section of the website.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
